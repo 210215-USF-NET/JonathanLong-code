@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GitLogic\GitLogic.csproj" />
+    <ProjectReference Include="..\GitBL\GitBL.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
