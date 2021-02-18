@@ -29,8 +29,11 @@ namespace ToHModels
             get { return heroName; }
             set
             {
-                if (value.Equals(null))
-                { //TODO: throw exception 
+                if (value == null || value.Equals(""))
+                { 
+                   
+                    throw new ArgumentNullException("Hero name can't be emtpy or null");
+                    
                 }
                 heroName = value;
 
