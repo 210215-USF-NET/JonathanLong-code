@@ -30,8 +30,9 @@ namespace PredicatesUI
             {
             Console.WriteLine("The name " + customers.Find(nameFinder).Name + " has been found");
             }
-            catch{
-                throw new Exception("No records have been found");
+            catch (Exception)
+            {
+                Console.WriteLine("No name was found in the customer list");
             }
             
 
