@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Contains meta data
+        Like what character set to use (UTF-8), the title of your tab/window/bookmark
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Web</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+        div{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgb(197, 232, 253);
+        }
+        .jumbotron{
+            background-color: lightslategray;
+        }
+    </style>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!--
+        Contains the actual content of your webpage
+        Like the stuff to fill in the white space
+        What end user would interact with and see
+    -->
+    <h1 class="jumbotron">Lecture on HTML, CSS, and Bootstrap</h1>
+    <div class="container">
+        <h1>HTML</h1>
+        <div class="container">
+            <h2>Common tags</h2>
+            <div class="container">
+                This is a div tag
+            </div>
+            <div class="container">
+                It's a generic block element
+            </div>
+            <div class="container">
+                That means, it takes up vertical space
+            </div>
+            <div class="container">
+                It's width is as wide as your viewpoint
+            </div>
+            <div class="container">
+                <span> This is a span, a generic inline element</span>
+                <span>It doesn't take up vertical space. It exists side by side with other elements if space permits</span>
+            </div>
+            <div class="container">
+                <p>
+                    This is a paragraph tag, also a block element
+                </p>
+                <article>This is an article, like paragraph, takes less vertical space</article>
+                <a href="https://agilemanifesto.org/" target="blank">This is a quick link to our page to beat!</a>
+            </div>
+            <div class="container">
+                <h3>Difference between head, header, heading</h3>
+                <p>The head tag, encapsulates meta information about your html resource</p>
+                <header>The header is a semantic element, that describes a header</header>
+                <p>The heading is a way of formatting how things are presented, like a paragraph heading. It has levels</p>
+                <h1>Level 1</h1>
+                <h2>Level 2</h2>
+                <h3>Level 3</h3>
+                <h4>Level 4</h4>
+                <h5>Level 5</h5>
+                <h6>Level 6</h6>
+                <p>Why even use the header element</p>
+                <p>Answer: Separation of concerns, html is used to define structure and what things are, not how things look</p>
+                <div class="container">
+                    <h3>Presenting a collection of stuff</h3>
+                    <div class="container">
+                        <h4>Lists</h4>
+                        <ol>
+                            <li>This is an ordered list</li>
+                            <li>Notice the numbers</li>
+                        </ol>
+                        <ul>
+                            <li>This is an unordered list</li>
+                            <li>Notice the lack of numbers</li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <h4>Tables</h4>
+                        <table class="table">
+                            <thead>
+                                <th>Name</th>
+                                <th>Favorite Color</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Jack</td>
+                                    <td>Blue</td>
+                                </tr>
+                                <tr>
+                                    <td>Marielle</td>
+                                    <td>Blue</td>
+                                    <td>Yellow</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Attributes</h2>
+            <p class="attribute">
+                Some tags, like the img tag use attributes to define the value of what they're presenting(img src ="where the image is located")
+                <br/>
+                The href attribute of the anchor tag, tells you where the anchor leads.
+                <br/>
+                You can also use these attributes to identify your elements
+                <ul>
+                    <caption>Ways to identify an element using attributes</caption>
+                    <li>ID - unique way to identify an element</li>
+                    <li>Class - a way to identofy multiple elements</li>
+                </ul>
+                You need to identify them to be able to know where to apply certain rules in CSS or behavior in JS.
+                <br/>
+                Then again, you can also use the style attribute to apply style to your elements.
+                <p style="color:blue;">Using the style element, changed the color of the font</p>
+            </p>
+        </div>
+        <div class="container csstalk">
+            <h1>CSS</h1>
+            <p>We use CSS to apply styles to webpages</p>
+            <div class="container">
+                <h2>Ways to include CSS in your HTML</h2>
+                <ol>
+                    <li>Inline</li>
+                    <li>Internal</li>
+                    <li>External</li>
+                </ol>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Different Types of Selectors</h2>
+            <h3>Simple Selectors</h3>
+            <ul>
+                <li>
+                    Tag/Element
+                    <ul>
+                        <li>uses the tag name to identify the element</li>
+                        <li>this will affect all elements with that tag name</li>
+                    </ul>
+                </li>
+                <li>
+                    Class
+                    <ul>
+                        <li>uses the class name to style a group of elements</li>
+                        <li>denoted by .className</li>
+                    </ul>
+                </li>
+                <li id="id">
+                    ID
+                    <ul>
+                        <li>Uses a unique id</li>
+                        <li>denoted by #id</li>
+                    </ul>
+                </li>
+                <li class="pseudo">
+                    Pseudo-class
+                    <ul>
+                        <li>specific keyword at the end of the selected used to style elements when it is at a certain state</li>
+                        <li>: active, :hover, ect...</li>
+                    </ul>
+                </li>
+                <li>
+                    Pseudo-element
+                    <ul id="pel">
+                        <li>used to style specific parts of an element</li>
+                        <li>insert content before or after an element</li>
+                        <li>style first letter or line of an element</li>
+                        <li>::before, ::after, ::firstline, ::firstletter</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Combinator Selectors</h3>
+            <ul>
+                <li>Child Descendant</li>
+                <li>Sibling</li>
+                <li>Attribute selectors</li>
+                <li>Multiple selectors</li>
+            </ul>
+            <h3>Wild card selector</h3>
+            <ul>
+                <li>Just the *</li>
+                <li>Styles everything, all elements with the given rules</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

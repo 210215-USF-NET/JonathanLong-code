@@ -7,6 +7,7 @@ namespace PredicatesUI
     {
         static void Main(string[] args)
         {
+            
             //Customer List
             List<Customer> customers = new List<Customer>();
 
